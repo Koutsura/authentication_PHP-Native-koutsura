@@ -12,13 +12,13 @@ function sendOTP($email, $otp) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'ryumaakana@gmail.com';         
-        $mail->Password = 'xewwupuozawbzaou';            
+        $mail->Username = 'your@gmail.com';         
+        $mail->Password = 'your password 2FA';            
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         // Penerima dan pengirim
-        $mail->setFrom('ryumaakana@gmail.com', 'HKI Universitas Bina Darma');
+        $mail->setFrom('your@gmail.com', 'HKI Universitas Bina Darma');
         $mail->addAddress($email);
 
         // Isi email
